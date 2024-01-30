@@ -1,0 +1,28 @@
+name: Pull Request
+
+on:
+
+  pull_request:
+    branches:
+      - main
+
+jobs:
+
+  nix_build_deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Install Nix
+      uses: cachix/install-nix-action@v22
+      with:
+        extra_nix_config: |
+          access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
+
+    - uses: workflow/nix-shell-action@v3.3.0
+      with:
+        flakes-from-devshell: true
+        script: |
+          bash build.sh
