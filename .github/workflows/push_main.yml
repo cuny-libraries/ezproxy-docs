@@ -8,7 +8,7 @@ on:
 
 jobs:
 
-  nix_build_deploy:
+  build_sites:
     runs-on: ubuntu-latest
     timeout-minutes: 30
 
