@@ -1,0 +1,1 @@
+# exprozy-static-pages
