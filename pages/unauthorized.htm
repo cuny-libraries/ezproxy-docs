@@ -1,0 +1,11 @@
+					{% extends "base.html" %}
+					{% block page_title %}Permission Denied{% endblock page_title %}
+					{% block content %}
+					<h1 class="text-body-emphasis">Permission Denied</h1>
+					<p class="col-lg-8 mx-auto fs-5">
+						Access to library e-resources is exclusive to active {{ campus_name }} students and employees, including retired faculty.
+					</p>
+					<p class="col-lg-8 mx-auto text-muted">
+						Based on your CUNYfirst record, it appears that you are either not a current student or employee at {{ campus_name }}, or your status is not currently marked as 'Active.' As a result, access to this library resource is unavailable at the moment. We kindly ask you to contact the <a href="{{ helpdesk_url }}" target="_blank">IT help desk</a> for further assistance in resolving this matter.
+					</p>
+					{% endblock content %}

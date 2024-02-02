@@ -1,0 +1,37 @@
+					{% extends "base.html" %}
+					{% block page_title %}Unrecognized Resource{% endblock page_title %}
+					{% block head %}<script>window.onload = function(){ document.forms['needhost_form'].submit();}</script>{% endblock %}
+					{% block content %}
+					<h1 class="text-body-emphasis">Unrecognized Resource</h1>
+					<p class="col-lg-8 mx-auto fs-5">
+						The resource you tried to access, <kbd>^H</kbd>, wasn't recognized by the remote access server. This might be due to following an outdated link or an issue with the resource's configuration in the remote access system. The problem has been automatically reported for review.
+					</p>
+					<p class="col-lg-8 mx-auto text-muted">
+						Consider searching for this resource in the library catalog, <a href="{{ onesearch_url }}">OneSearch</a>. You can explore additional research options on the <a href="{{ library_url }}">library website</a>.
+					</p>
+					<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+					<form action="https://docs.google.com/forms/d/1OotVOUxvMIw3yx1gsPr8bS2Exz2OBp5Ikxe_-WN5iko/formResponse" method="POST" target="hidden_iframe" id="needhost_form">
+						<!-- Below: Campus ID -->
+						<input type="hidden" class="form-control rounded-3" name="entry.1698407853" value="{{ campus_code | upper }}" />
+						<!-- Below: Referring URL -->
+						<input type="hidden" class="form-control rounded-3" name="entry.1152990066" value="" />
+						<!-- Below: User Agent -->
+						<input type="hidden" class="form-control rounded-3" name="entry.60184205" value="" />
+						<!-- Below: Requested URL -->
+						<input type="hidden" class="form-control rounded-3" name="entry.1666039247" value="^V" />
+						<!-- Below: Requested Host -->
+						<input type="hidden" class="form-control rounded-3" name="entry.1197121227" value="^H" />
+						<!-- Below: IP Address -->
+						<input type="hidden" class="form-control rounded-3" name="entry.1497421557" value="" />
+						<!-- Below: Scripts to get IP Address, Referring URL, and User Agent -->
+						<script type="text/javascript" src="http://l2.io/ip.js?var=myip"></script>
+						<script>
+							document.forms["needhost_form"]["entry.1497421557"].value = myip; // IP address
+							document.forms["needhost_form"]["entry.1152990066"].value = document.referrer; // referring URL
+							document.forms["needhost_form"]["entry.60184205"].value = navigator.userAgent; // user agent
+						</script>
+						<input type="hidden" class="form-control rounded-3" name="draftResponse" value="[]">
+						<input type="hidden" class="form-control rounded-3" name="pageHistory" value="0">
+						<button type="button" class="btn btn-primary" type="submit" style="display:none;">Submit error</button>
+					</form>
+					{% endblock content %}

@@ -1,0 +1,62 @@
+					{% extends "base.html" %}
+					{% block page_title %}Log In{% endblock page_title %}
+					{% block head %}
+					{% if library_auth == false %}
+		<meta http-equiv="refresh" content="0; URL='/login?auth=shibboleth&url=^U'" />
+					{% endif %}
+					{% if library_auth == true %}
+		<script src="public/modal.js"></script>
+					{% endif %}
+					{% endblock head %}
+					{% block content %}
+					<h1 class="text-body-emphasis">Log In</h1>
+					{% block login_failure %}{% endblock login_failure %}
+					<p class="col-lg-8 mx-auto fs-5">
+						If you are a current student, active employee, or retired faculty from {{ campus_name }}, use CUNY Login to access this library resource.
+					</p>
+					{% if library_auth == true %}
+					<p class="col-lg-8 mx-auto text-muted">
+						Alternatively, if you have been provided with specific credentials by the library, utilize the Library Login option for access.
+					</p>
+					{% endif %}
+
+					<div class="d-inline-flex gap-2 mb-5">
+						{% if library_auth == true %}
+						<a class="btn btn-outline-secondary btn-lg px-4 rounded-pill" data-bs-toggle="modal" data-bs-target="#modalSignin">
+							Library Login
+						</a>
+						{% endif %}
+						<a class="d-inline-flex align-items-center btn btn-primary btn-lg px-4 rounded-pill" href="/login?auth=shibboleth&url=^U">
+							CUNY Login
+						</a>
+					</div>
+
+					<div class="modal fade" id="modalSignin" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalSigninLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h1 class="modal-title fs-5" id="modalSigninLabel">Library Login</h1>
+									<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+								</div>
+								<form action="/login" method="post">
+									<input type="hidden" class="form-control rounded-3" name="url" value="^U">
+									<div class="modal-body">
+										<p>Have credentials from the {{ campus_name }} library? Enter them below.</p>
+										<div class="form-floating mb-3">
+											<input type="text" name="user" class="form-control rounded-3" id="floatingInput" placeholder="Username" required="required" autofocus="autofocus">
+											<label for="floatingInput">Username</label>
+										</div>
+										<div class="form-floating mb-3">
+											<input type="password" name="pass" class="form-control rounded-3" id="floatingPassword" placeholder="Password" required="required">
+											<label for="floatingPassword">Password</label>
+										</div>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+										<button type="button" class="btn btn-primary" type="submit">Log in</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					{% endblock content %}

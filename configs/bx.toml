@@ -1,0 +1,10 @@
+# Campus-specific variables
+library_auth = true
+campus_code = "bx"
+campus_name = "Bronx Community College"
+library_url = "https://www.bcc.cuny.edu/library/"
+onesearch_url = "https://cuny-bx.primo.exlibrisgroup.com/discovery/search?vid=01CUNY_BX:CUNY_BX"
+db_url = "https://bcc-cuny.libguides.com/az.php"
+ask_url = "https://www.bcc.cuny.edu/library/library-research/"
+helpdesk_url = "https://cunyithelp.cuny.edu/csp?id=cuny_kb_article_find_answer&sys_id=20ded7fedb222810887a92c5d49619ad"
+library_help = ""

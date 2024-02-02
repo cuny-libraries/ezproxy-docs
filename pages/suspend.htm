@@ -1,0 +1,14 @@
+					{% extends "base.html" %}
+					{% block page_title %}Download Limit Exceeded{% endblock page_title %}
+					{% block content %}
+					<h1 class="text-body-emphasis">Download Limit Exceeded</h1>
+					<p class="col-lg-8 mx-auto fs-5">
+						Due to reported excessive downloading of full-text articles by users, we have implemented a limit on the amount of data that can be downloaded through our remote access servers.
+					</p>
+					<p class="col-lg-8 mx-auto text-muted">
+						Unfortunately, your account has exceeded this limit, leading to a temporary suspension. The good news is that it should automtically clear up in about 60 minutes! You will be able to continue your work at that time.
+					</p>
+					<p class="col-lg-8 mx-auto text-muted">
+						If you see this message after that time, contact the <a href="mailto:support@cuny-ols.libanswers.com?subject=EZproxy: {{ campus_code | upper }} - Download limit exceeded?body=Hi, there! My name is _____ ______ and my EMPLID is _____. I reached the Download Limit Exceeded error page at {{ campus_name }}. Kindly advise. Thank you!">CUNY Office of Library Services</a> for further assistance in resolving this matter.
+					</p>
+					{% endblock content %}
