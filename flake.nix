@@ -1,24 +1,33 @@
 {
-  description = "Development environment";
-
   inputs = {
-    nixpkgs = { url = "github:NixOS/nixpkgs/nixpkgs-unstable"; };
-    flake-utils = { url = "github:numtide/flake-utils"; };
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    flake-utils.url = "github:numtide/flake-utils";
+    rust-overlay.url = "github:oxalica/rust-overlay";
   };
-
-  outputs = { self, nixpkgs, flake-utils }:
-   flake-utils.lib.eachDefaultSystem (system:
-      let
-        inherit (nixpkgs.lib) optional;
-        pkgs = import nixpkgs { inherit system; };
-
-      in
-      {
-        devShell = pkgs.mkShell {
-          buildInputs = [
-            pkgs.zola
-            pkgs.tailwindcss
-          ];
-        };
-      });
+  outputs = { self, nixpkgs, flake-utils, rust-overlay }:
+    flake-utils.lib.eachDefaultSystem
+      (system:
+        let
+          overlays = [ (import rust-overlay) ];
+          pkgs = import nixpkgs {
+            inherit system overlays;
+          };
+        in
+        with pkgs;
+        {
+          devShells.default = mkShell {
+            buildInputs = [
+                rust-bin.stable.latest.default
+                pkgs.openssl # native-tls is included in cargo, needs work to remove
+            ] ++
+              pkgs.lib.optionals pkgs.stdenv.isDarwin [
+                darwin.apple_sdk.frameworks.Security # Should only be for darwin
+                darwin.apple_sdk.frameworks.SystemConfiguration
+            ]
+            ;
+            shellHook = ''
+            '';
+          };
+        }
+      );
 }

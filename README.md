@@ -3,30 +3,28 @@
 Generate ezproxy static pages for CUNY!
 
 
-## Install zola and Tailwind!
+## Install tooling
 
-Download and install from the github release:
+### Rust
 
-https://github.com/getzola/zola/releases/tag/v0.18.0
+https://rustup.rs/
 
-[Install tailwindcss](https://tailwindcss.com/blog/standalone-cli)
+### Tera-CLI
 
-## Build a single site
+cargo install --git https://github.com/chevdor/tera-cli --tag v0.3.0 --root .
+
+## Build a single file
 
 ```
-zola -c configs/bcc.toml build  --output-dir public/bcc --force
+./bin/tera --include-path=templates --template=pages/404.htm configs/bcc.toml --out public/bcc/404.htm
 ```
 
 ## Serve a single site for local development
 
-```
-zola -c configs/bcc.toml serve --force
-```
-
-Setting `--output-dir` doesn't [work with](https://github.com/getzola/zola/issues/2423) `serve`
+`open public/bcc/pages/404.htm`
 
 ## Build all sites
 
 ```
-sh build.sh
+bash build.sh
 ```
