@@ -1,10 +1,10 @@
 					{% extends "base.html" %}
 					{% block page_title %}Log In{% endblock page_title %}
 					{% block head %}
-					{% if library_auth == false %}
+					{% if library_login == false %}
 		<meta http-equiv="refresh" content="0; URL='/login?auth=shibboleth&url=^U'" />
 					{% endif %}
-					{% if library_auth == true %}
+					{% if library_login == true %}
 		<script src="public/modal.js"></script>
 					{% endif %}
 					{% endblock head %}

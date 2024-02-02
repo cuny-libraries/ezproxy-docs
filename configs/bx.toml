@@ -1,5 +1,5 @@
 # Campus-specific variables
-library_auth = true
+library_login = true
 campus_code = "bx"
 campus_name = "Bronx Community College"
 library_url = "https://www.bcc.cuny.edu/library/"
