@@ -25,4 +25,5 @@ jobs:
       with:
         flakes-from-devshell: true
         script: |
+          cargo install --git https://github.com/chevdor/tera-cli --tag v0.3.0 --root .
           bash build.sh

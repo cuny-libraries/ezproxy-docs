@@ -1,5 +1,17 @@
 set -ex
 
-tailwindcss -c tailwind.config.js -i input.css -o static/site.css --minify
-zola -c configs/bcc.toml build --output-dir public/bcc --force
-zola -c configs/bmcc.toml build --output-dir public/bmcc --force
+
+SITES=(
+  "bcc"
+  "bmcc"
+)
+
+rm -rf public
+
+for SITE in ${SITES[@]}; do
+  mkdir -p public/${SITE}/pages
+
+  for PAGE in pages/*; do
+    ./bin/tera --include-path=templates --template="${PAGE}" "configs/${SITE}.toml" --out "public/${SITE}/${PAGE}"
+  done
+done
