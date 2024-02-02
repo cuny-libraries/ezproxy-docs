@@ -30,7 +30,9 @@ Run the following command in your terminal:
 
 Run the following command in your terminal:
 
-```open public/bx/login.htm```
+```
+open public/bx/login.htm
+```
 
 This should open the page in your default browser.
 
