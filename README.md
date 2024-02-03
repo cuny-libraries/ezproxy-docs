@@ -1,14 +1,24 @@
 # ezprozy-docs
 
-The CUNY Office of Library Services manages more than a dozen EZproxy servers on behalf of the CUNY Libraries. To help manage all the [EZproxy web pages](https://help.oclc.org/Library_Management/EZproxy/Manage_EZproxy/Default_web_pages) (which are identical except for the campus-specific information), we are using the [tera-cli](https://github.com/chevdor/tera-cli) command line tool for the [tera](https://github.com/Keats/tera) template engine. We use the [Bootstrap](https://getbootstrap.com/) CSS framework.
+The CUNY Office of Library Services manages more than a dozen EZproxy servers on behalf of the CUNY Libraries. To help manage all the [EZproxy web pages](https://help.oclc.org/Library_Management/EZproxy/Manage_EZproxy/Default_web_pages) (which are identical except for the campus-specific information), we automated the creation and standardization of the HTML files. Using templates, we can now easily make universal changes with just a couple of keystrokes.
 
-## Install
+## Development Environment 
 
-### Rust
+This project was built on MacOS. It uses the [Rust](https://www.rust-lang.org/) programming language, the [tera-cli](https://github.com/chevdor/tera-cli) command line tool for the [tera](https://github.com/Keats/tera) template engine, and [Bootstrap](https://getbootstrap.com/) CSS framework.
 
-Use the [rustup](https://rustup.rs/) installer to download and install the Rust programming language.
+### Install
 
-### Tera-CLI
+#### Rust
+
+Run the following command in your terminal:
+
+```
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+
+This uses the [rustup](https://rustup.rs/) installer to download and install the Rust programming language.
+
+#### Tera-CLI
 
 Run the following command in your terminal and follow the on-screen prompts:
 
@@ -16,9 +26,11 @@ Run the following command in your terminal and follow the on-screen prompts:
 cargo install --git https://github.com/chevdor/tera-cli --tag v0.3.0 --root .
 ```
 
-## Navigate
+### Navigate
 
-### Folders
+The file and folder structure is not necessarily intuitive 
+
+#### Folders
 
 * **configs**: contains one `.toml` configuration file for each campus.
 * **templates**: contains the templates that are extended by the pages.
@@ -27,7 +39,7 @@ cargo install --git https://github.com/chevdor/tera-cli --tag v0.3.0 --root .
 * **favicons**: contains one `.ico` favorite icon for each campus.
 * **logos**: contains one `.png` logo file for each campus.
 
-### Files
+#### Files
 
 * **README.md**: that's this file!
 * **build.sh**: shell script you must run in the command line to build the `.htm` (and all other) files you will need for EZproxy.
@@ -48,7 +60,7 @@ Modify `build.sh` when you need to add/remove campus sites to the project.
 
 ## Build
 
-After you have edited the files you needed to edit, you must build the pages that you will upload to the `docs` directory on the EZproxy server.
+After editing the files, you must build the pages that you will upload to the `docs` directory on the EZproxy server.
 
 Run the following command in your terminal:
 
@@ -56,7 +68,9 @@ Run the following command in your terminal:
 bash build.sh
 ```
 
-This will create a folder for each site with all the necessary files in the `public` folder. It will also create a `.zip` file of each site's contents in the same `public` folder, allowing you to move the files around more easily.
+This will create a `public` folder in the working directory, with a subfolder for each EZproxy site.
+
+It will also create a `.zip` file for each site in that same `public` folder, allowing you to move the files around more easily.
 
 ## Upload
 
