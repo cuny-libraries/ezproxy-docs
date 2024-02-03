@@ -14,14 +14,14 @@
 					<p class="col-lg-8 mx-auto fs-5">
 						If you are a current student, active employee, or retired faculty from {{ campus_name }}, use CUNY Login to access this library resource.
 					</p>
-					{% if library_auth == true %}
+					{% if library_login == true %}
 					<p class="col-lg-8 mx-auto text-muted">
 						Alternatively, if you have been provided with specific credentials by the library, utilize the Library Login option for access.
 					</p>
 					{% endif %}
 
 					<div class="d-inline-flex gap-2 mb-5">
-						{% if library_auth == true %}
+						{% if library_login == true %}
 						<a class="btn btn-outline-secondary btn-lg px-4 rounded-pill" data-bs-toggle="modal" data-bs-target="#modalSignin">
 							Library Login
 						</a>
