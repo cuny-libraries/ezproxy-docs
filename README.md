@@ -50,31 +50,13 @@ Modify `build.sh` when you need to add/remove campus sites to the project.
 
 After you have edited the files you needed to edit, you must build the pages that you will upload to the `docs` directory on the EZproxy server.
 
-### Build a single file at a single site
-
-If you edit the `login.htm` page, run the following command in your terminal:
-
-```
-./bin/tera --include-path=templates --template=pages/login.htm configs/bx.toml --out public/bx/login.htm
-```
-
-(Change `bx` to the site where the change was made and `login.htm` to whichever file you modified.)
-
-To open the built file in your default browser, run the following command in your terminal:
-
-```
-open public/bx/login.htm
-```
-
-(Change `bx` to the site where the change was made and `login.htm` to whichever file you modified.)
-
-### Build all sites
-
 Run the following command in your terminal:
 
 ```
 bash build.sh
 ```
+
+This will create a folder for each site with all the necessary files in the `public` folder. It will also create a `.zip` file of each site's contents in the same `public` folder, allowing you to move the files around more easily.
 
 ## Upload
 

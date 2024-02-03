@@ -19,4 +19,5 @@ for SITE in ${SITES[@]}; do
   cp -R logos/${SITE}.png public/${SITE}/public/logo.png
   cp -R favicons/${SITE}.ico public/${SITE}/public/favicon.ico
   cp -R static/* public/${SITE}/public
+  zip -r public/${SITE}.zip public/${SITE}
 done
