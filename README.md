@@ -1,10 +1,10 @@
-# ezprozy-docs
+# ezproxy-docs
 
 The CUNY Office of Library Services manages more than a dozen EZproxy servers on behalf of the CUNY Libraries. To help manage all the [EZproxy web pages](https://help.oclc.org/Library_Management/EZproxy/Manage_EZproxy/Default_web_pages) (which are identical except for the campus-specific information), we automated the creation and standardization of the HTML files. Using templates, we can now easily make universal changes with just a couple of keystrokes.
 
 ## Development Environment 
 
-This project was built on MacOS. It uses the [Rust](https://www.rust-lang.org/) programming language, the [tera-cli](https://github.com/chevdor/tera-cli) command line tool for the [tera](https://github.com/Keats/tera) template engine, and [Bootstrap](https://getbootstrap.com/) CSS framework.
+This project was built on **MacOS**. It uses the [Rust](https://www.rust-lang.org/) programming language, the [tera-cli](https://github.com/chevdor/tera-cli) command line tool for the [tera](https://github.com/Keats/tera) template engine, and [Bootstrap](https://getbootstrap.com/) CSS framework.
 
 ### Install
 
@@ -68,13 +68,13 @@ Run the following command in your terminal:
 bash build.sh
 ```
 
-This will create a `public` folder in the working directory, with a subfolder for each EZproxy site.
+This will create an `output` folder in the working directory, with a subfolder for each EZproxy site.
 
-It will also create a `.zip` file for each site in that same `public` folder, allowing you to move the files around more easily.
+It will also create a `.zip` file for each site in that same `output` folder, allowing you to move the files around more easily.
 
 ## Upload
 
-Upload the contents of the output site folder to EZproxy's `docs` folder.
+Upload the contents of the `output` folder to EZproxy's `docs` folder.
 
 ## Credit
 
