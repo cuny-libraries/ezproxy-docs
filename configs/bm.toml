@@ -3,7 +3,7 @@ library_login = true
 campus_code = "bm"
 campus_name = "Borough of Manhattan Community College"
 library_url = "https://www.bmcc.cuny.edu/library/"
-onesearch_url = "https://cuny-bm.primo.exlibrisgroup.com/discovery/search?vid=01CUNY_BM:CUNY_BM"
+catalog_url = "https://cuny-bm.primo.exlibrisgroup.com/discovery/search?vid=01CUNY_BM:CUNY_BM"
 db_url = "https://bmcc.libguides.com/az.php"
 ask_url = "https://www.bmcc.cuny.edu/library/help/getting-help/"
 helpdesk_url = "https://cunyithelp.cuny.edu/csp?id=cuny_kb_article_find_answer&sys_id=d5fed7fedb222810887a92c5d4961966"
