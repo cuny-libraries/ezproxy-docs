@@ -28,7 +28,7 @@ cargo install --git https://github.com/chevdor/tera-cli --tag v0.3.0 --root .
 
 ### Navigate
 
-The file and folder structure is not necessarily intuitive 
+The file and folder structure is not necessarily intuitive.
 
 #### Folders
 
@@ -69,8 +69,6 @@ bash build.sh
 ```
 
 This will create an `output` folder in the working directory, with a subfolder for each EZproxy site.
-
-It will also create a `.zip` file for each site in that same `output` folder, allowing you to move the files around more easily.
 
 ## Upload
 
