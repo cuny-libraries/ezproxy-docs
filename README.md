@@ -4,9 +4,17 @@ The CUNY Office of Library Services manages more than a dozen EZproxy servers on
 
 ## Development Environment 
 
-This project was built on **MacOS**. It uses the [Rust](https://www.rust-lang.org/) programming language, the [tera-cli](https://github.com/chevdor/tera-cli) command line tool for the [tera](https://github.com/Keats/tera) template engine, and [Bootstrap](https://getbootstrap.com/) CSS framework.
+This project was built on MacOS. It uses the [Rust](https://www.rust-lang.org/) programming language, the [tera-cli](https://github.com/chevdor/tera-cli) command line tool for the [tera](https://github.com/Keats/tera) template engine, and [Bootstrap](https://getbootstrap.com/) CSS framework.
 
-### Install
+### Edit Directly in GitHub
+
+If you are a contributing member of the [CUNY Libraries organization](https://github.com/cuny-libraries), you can edit files directly in GitHub. When your commit is merged, view the [Actions of the "Push Main" workflow](https://github.com/cuny-libraries/ezproxy-docs/actions/workflows/push_main.yml). Click on the most recent workflow run and scroll down to "Artifacts." Download the `output.zip` file.
+
+### Edit Remotely via Pull Request
+
+Make a pull request and edit the files. If your commits are merged into the main branch, you'll find the output file in the [Actions of the "Push Main" workflow](https://github.com/cuny-libraries/ezproxy-docs/actions/workflows/push_main.yml). Click on the most recent workflow run and scroll down to "Artifacts." From there, download the `output.zip` file.
+
+### Install and Edit on Local Machine
 
 #### Rust
 

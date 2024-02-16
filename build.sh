@@ -1,8 +1,23 @@
 set -ex
 
 SITES=(
+  "al"
+  "bc"
   "bx"
   "bm"
+  "cl"
+  "gj"
+  "ho"
+  "kb"
+  "le"
+  "lg"
+  "me"
+  "nc"
+  "ny"
+  "qb"
+  "qc"
+  "si"
+  "yc"
 )
 
 rm -rf output

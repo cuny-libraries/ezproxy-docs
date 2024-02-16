@@ -1,0 +1,11 @@
+# Campus-specific variables
+multi_auth = false
+campus_code = "qb"
+campus_name = "Queensborough Community College"
+library_url = "https://qcc.libguides.com/libraryhome"
+catalog_url = "https://cuny-qb.primo.exlibrisgroup.com/discovery/search?vid=01CUNY_QB:CUNY_QB"
+db_url = "https://qcc.libguides.com/az.php"
+ill_url = "https://qcc-cuny.illiad.oclc.org/illiad/logon.html"
+ask_url = "https://qcc.libguides.com/c.php?g=113222&p=736995"
+helpdesk_url = "https://cunyithelp.cuny.edu/csp?id=cuny_kb_article_find_answer&sys_id=0c9f5ffedb222810887a92c5d49619dc"
+library_help = ""

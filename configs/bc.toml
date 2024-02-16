@@ -1,0 +1,11 @@
+# Campus-specific variables
+multi_auth = true
+campus_code = "bc"
+campus_name = "Brooklyn College"
+library_url = "http://library.brooklyn.cuny.edu"
+catalog_url = "https://cuny-bc.primo.exlibrisgroup.com/discovery/search?vid=01CUNY_BC:CUNY_BC"
+db_url = "https://libguides.brooklyn.cuny.edu/az.php"
+ill_url = "https://libguides.brooklyn.cuny.edu/interlibraryloan"
+ask_url = "https://libguides.brooklyn.cuny.edu/askalibrarian"
+helpdesk_url = "https://cunyithelp.cuny.edu/csp?id=cuny_kb_article_find_answer&sys_id=9851230fdb812850ca2afdbaf4961983"
+library_help = "<p>If you are having trouble authenticating, please see our <a href='https://libguides.brooklyn.cuny.edu/accounts/remoteaccess' target='_bank'>Remote Access Troubleshooting guide</a>.</p>"

@@ -1,0 +1,11 @@
+# Campus-specific variables
+multi_auth = true
+campus_code = "gj"
+campus_name = "Craig Newmark Graduate School of Journalism"
+library_url = "https://www.journalism.cuny.edu/current-students/research-center/"
+catalog_url = "https://cuny-gj.primo.exlibrisgroup.com/discovery/search?vid=01CUNY_GJ:CUNY_GJ"
+db_url = "https://researchguides.journalism.cuny.edu/az.php"
+ill_url = "https://52060.account.worldcat.org/account"
+ask_url = "https://researchguides.journalism.cuny.edu/center/help"
+helpdesk_url = "https://cunyithelp.cuny.edu/csp?id=cuny_kb_article_find_answer&sys_id=51a13f4bdbc12850ca2afdbaf49619a3"
+library_help = ""

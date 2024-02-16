@@ -1,0 +1,11 @@
+# Campus-specific variables
+multi_auth = false
+campus_code = "ho"
+campus_name = "Hostos Community College"
+library_url = "https://guides.hostos.cuny.edu"
+catalog_url = "https://cuny-ho.primo.exlibrisgroup.com/discovery/search?vid=01CUNY_HO:CUNY_HO"
+db_url = "http://guides.hostos.cuny.edu/az.php"
+ill_url = "https://guides.hostos.cuny.edu/interlibrary"
+ask_url = "https://guides.hostos.cuny.edu/abouthostoslibrary/talk"
+helpdesk_url = "https://cunyithelp.cuny.edu/csp?id=cuny_kb_article_find_answer&sys_id=168941071b54dd1014a8c99f1d4bcbe0"
+library_help = ""

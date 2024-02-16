@@ -1,0 +1,11 @@
+# Campus-specific variables
+multi_auth = false
+campus_code = "al"
+campus_name = "Central Office"
+library_url = "https://www.cuny.edu/libraries"
+catalog_url = "https://cuny-gc.primo.exlibrisgroup.com/discovery/search?vid=01CUNY_GC:CENTRAL_OFFICE"
+db_url = "https://libguides.gc.cuny.edu/az.php"
+ill_url = "https://libguides.gc.cuny.edu/access/interlibraryloan"
+ask_url = "https://libguides.gc.cuny.edu/ask-a-librarian"
+helpdesk_url = "https://cunyithelp.cuny.edu/csp?id=cuny_kb_article_find_answer&sys_id=183f1ffedb222810887a92c5d49619c3"
+library_help = ""

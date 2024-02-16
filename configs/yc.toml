@@ -1,0 +1,11 @@
+# Campus-specific variables
+multi_auth = false
+campus_code = "yc"
+campus_name = "York College"
+library_url = "https://www.york.cuny.edu/library"
+catalog_url = "https://cuny-yc.primo.exlibrisgroup.com/discovery/search?vid=01CUNY_YC:CUNY_YC"
+db_url = "https://libguides.york.cuny.edu/az.php"
+ill_url = "https://www.york.cuny.edu/library/interlibrary-loan"
+ask_url = "http://york-cuny.libanswers.com"
+helpdesk_url = "https://cunyithelp.cuny.edu/csp?id=cuny_kb_article_find_answer&sys_id=e6a0bb0bdbc12850ca2afdbaf49619b1"
+library_help = ""

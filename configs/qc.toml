@@ -1,0 +1,11 @@
+# Campus-specific variables
+multi_auth = true
+campus_code = "qc"
+campus_name = "Queens College"
+library_url = "https://library.qc.cuny.edu/"
+catalog_url = "https://cuny-qc.primo.exlibrisgroup.com/discovery/search?vid=01CUNY_QC:CUNY_QC"
+db_url = "https://qc-cuny.libguides.com/az.php"
+ill_url = "https://qc.illiad.oclc.org/illiad/logon.html"
+ask_url = "https://library.qc.cuny.edu/services/research/ask-us/"
+helpdesk_url = "https://cunyithelp.cuny.edu/csp?id=cuny_kb_article_find_answer&sys_id=57ff6b0bdbc12850ca2afdbaf49619df"
+library_help = ""

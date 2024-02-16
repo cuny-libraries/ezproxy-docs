@@ -1,0 +1,11 @@
+# Campus-specific variables
+multi_auth = false
+campus_code = "lg"
+campus_name = "LaGuardia Community College"
+library_url = "https://library.laguardia.edu"
+catalog_url = "https://cuny-lg.primo.exlibrisgroup.com/discovery/search?vid=01CUNY_LG:CUNY_LG"
+db_url = "https://guides.laguardia.edu/az.php"
+ill_url = "https://lagcc-cuny.illiad.oclc.org/illiad/logon.html"
+ask_url = "https://library.laguardia.edu/help/ask/"
+helpdesk_url = "https://cunyithelp.cuny.edu/csp?id=cuny_kb_article_find_answer&sys_id=296e13fedb222810887a92c5d49619ca"
+library_help = ""

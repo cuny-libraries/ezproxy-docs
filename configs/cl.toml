@@ -1,0 +1,11 @@
+# Campus-specific variables
+multi_auth = false
+campus_code = "cl"
+campus_name = "CUNY School of Law"
+library_url = "https://www.law.cuny.edu/library/"
+catalog_url = "https://cuny-cl.primo.exlibrisgroup.com/discovery/search?vid=01CUNY_CL:CUNY_CL"
+db_url = "https://libguides.law.cuny.edu/az.php"
+ill_url = "https://libguides.law.cuny.edu/c.php?g=1062724&p=7727797"
+ask_url = "https://libguides.law.cuny.edu/c.php?g=1062724&p=7727798"
+helpdesk_url = "https://cunyithelp.cuny.edu/csp?id=cuny_kb_article_find_answer&sys_id=06b3b7cbdbc12850ca2afdbaf4961980"
+library_help = ""

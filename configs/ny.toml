@@ -1,0 +1,11 @@
+# Campus-specific variables
+multi_auth = false
+campus_code = "ny"
+campus_name = "New York City College of Technology"
+library_url = "https://library.citytech.cuny.edu"
+catalog_url = "https://cuny-ny.primo.exlibrisgroup.com/discovery/search?vid=01CUNY_NY:CUNY_NY"
+db_url = "https://libguides.citytech.cuny.edu/az.php"
+ill_url = "https://library.citytech.cuny.edu/services/interlibraryLoan/index.php"
+ask_url = "https://library.citytech.cuny.edu/help/ask/index.php"
+helpdesk_url = "https://cunyithelp.cuny.edu/csp?id=cuny_kb_article_find_answer&sys_id=be2f6bc7dbc12850ca2afdbaf4961929"
+library_help = ""

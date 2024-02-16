@@ -1,0 +1,11 @@
+# Campus-specific variables
+multi_auth = true
+campus_code = "si"
+campus_name = "College of Staten Island"
+library_url = "https://www.library.csi.cuny.edu"
+catalog_url = "https://cuny-si.primo.exlibrisgroup.com/discovery/search?vid=01CUNY_SI:CUNY_SI"
+db_url = "https://www.library.csi.cuny.edu/az.php"
+ill_url = "https://library.csi.cuny.edu/services/interlibraryloan"
+ask_url = "https://library.csi.cuny.edu/help/ask"
+helpdesk_url = "https://cunyithelp.cuny.edu/csp?id=cuny_kb_article_find_answer&sys_id=30e527cfdb812850ca2afdbaf49619d7"
+library_help = ""

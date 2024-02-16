@@ -1,5 +1,5 @@
 # Campus-specific variables
-library_login = true
+multi_auth = true
 campus_code = "bm"
 campus_name = "Borough of Manhattan Community College"
 library_url = "https://www.bmcc.cuny.edu/library/"

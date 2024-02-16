@@ -1,0 +1,11 @@
+# Campus-specific variables
+multi_auth = false
+campus_code = "nc"
+campus_name = "Guttman Community College"
+library_url = "https://guttman.cuny.edu/library"
+catalog_url = "https://cuny-nc.primo.exlibrisgroup.com/discovery/search?vid=01CUNY_NC:CUNY_NC"
+db_url = "https://guttman-cuny.libguides.com/az.php"
+ill_url = "https://guttman-cuny.libinsight.com/ill-request"
+ask_url = "https://guttman.cuny.edu/library/about/meet-the-team/"
+helpdesk_url = "https://cunyithelp.cuny.edu/csp?id=cuny_kb_article_find_answer&sys_id=1dbe17fedb222810887a92c5d49619b9"
+library_help = ""

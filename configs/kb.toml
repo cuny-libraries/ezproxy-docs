@@ -1,0 +1,11 @@
+# Campus-specific variables
+multi_auth = false
+campus_code = "kb"
+campus_name = "Kingsborough Community College"
+library_url = "https://library.kbcc.cuny.edu/homepage"
+catalog_url = "https://cuny-kb.primo.exlibrisgroup.com/discovery/search?vid=01CUNY_KB:CUNY_KB"
+db_url = "https://library.kbcc.cuny.edu/az/databases"
+ill_url = "https://kbcc-cuny.illiad.oclc.org/illiad/logon.html"
+ask_url = "https://library.kbcc.cuny.edu/askalibrarian"
+helpdesk_url = "https://cunyithelp.cuny.edu/csp?id=cuny_kb_article_find_answer&sys_id=3c1f93fedb222810887a92c5d49619c3"
+library_help = ""

@@ -1,0 +1,11 @@
+# Campus-specific variables
+multi_auth = true
+campus_code = "me"
+campus_name = "Medgar Evers College"
+library_url = "https://www.mec.cuny.edu/library"
+catalog_url = "https://cuny-me.primo.exlibrisgroup.com/discovery/search?vid=01CUNY_ME:CUNY_ME"
+db_url = "https://mec.cuny.libguides.com/az.php"
+ill_url = "https://mec-cuny.illiad.oclc.org/illiad/logon.html"
+ask_url = "https://mec.cuny.libguides.com/UsingLibrary/ResearchHelp"
+helpdesk_url = "https://cunyithelp.cuny.edu/csp?id=cuny_kb_article_find_answer&sys_id=bd9e6bc7dbc12850ca2afdbaf496197b"
+library_help = ""

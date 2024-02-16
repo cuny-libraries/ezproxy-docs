@@ -1,0 +1,11 @@
+# Campus-specific variables
+multi_auth = true
+campus_code = "le"
+campus_name = "Lehman College"
+library_url = "https://www.lehman.cuny.edu/library"
+catalog_url = "https://cuny-le.primo.exlibrisgroup.com/discovery/search?vid=01CUNY_LE:CUNY_LE"
+db_url = "https://libguides.lehman.edu/az.php"
+ill_url = "https://www.lehman.cuny.edu/library/ill.php"
+ask_url = "https://www.lehman.edu/library/ask.php"
+helpdesk_url = "https://cunyithelp.cuny.edu/csp?id=cuny_kb_article_find_answer&sys_id=a8cdaf87dbc12850ca2afdbaf49619d9"
+library_help = ""
