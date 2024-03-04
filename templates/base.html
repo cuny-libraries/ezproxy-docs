@@ -17,9 +17,9 @@
 					</a>
 					<ul class="nav nav-pills">
 						<li class="nav-item"><a href="{{ catalog_url }}" class="nav-link">OneSearch</a></li>
-						<li class="nav-item"><a href="{{ db_url }}" class="nav-link">Databases A-Z</a></li>
-						<li class="nav-item"><a href="{{ ill_url }}" class="nav-link">Interlibrary Loan</a></li>
-						<li class="nav-item"><a href="{{ ask_url }}" class="nav-link">Ask a Librarian</a></li>
+						{% if db_url %}<li class="nav-item"><a href="{{ db_url }}" class="nav-link">Databases A-Z</a></li>{% endif %}
+						{% if ill_url %}<li class="nav-item"><a href="{{ ill_url }}" class="nav-link">Interlibrary Loan</a></li>{% endif %}
+						{% if ask_url %}<li class="nav-item"><a href="{{ ask_url }}" class="nav-link">Ask a Librarian</a></li>{% endif %}
 					</ul>
 				</header>
 			</div>
