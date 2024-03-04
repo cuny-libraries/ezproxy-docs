@@ -14,23 +14,20 @@
 					<p class="col-lg-8 mx-auto fs-5">
 						If you are a current student, active employee, or retired faculty from {{ campus_name }}, use CUNY Login to access this library resource.
 					</p>
-					{% if multi_auth == true %}
-					<p class="col-lg-8 mx-auto text-muted">
-						Alternatively, if you have been provided with specific credentials by the library, utilize the Library Login option for access.
-					</p>
-					{% endif %}
-
 					<div class="d-inline-flex gap-2 mb-5">
-						{% if multi_auth == true %}
-						<a class="btn btn-outline-secondary btn-lg px-4 rounded-pill" data-bs-toggle="modal" data-bs-target="#modalSignin">
-							Library Login
-						</a>
-						{% endif %}
 						<a class="d-inline-flex align-items-center btn btn-primary btn-lg px-4 rounded-pill" href="/login?auth=shibboleth&url=^U">
 							CUNY Login
 						</a>
 					</div>
 					{% if multi_auth == true %}
+					<p class="col-lg-8 mx-auto text-muted">
+						Alternatively, if you have been provided with specific credentials by the library, utilize the Library Login option for access.
+					</p>
+					<div class="d-inline-flex gap-2 mb-5">
+						<a class="btn btn-outline-secondary btn-lg px-4 rounded-pill" data-bs-toggle="modal" data-bs-target="#modalSignin">
+							Library Login
+						</a>
+					</div>
 					<div class="modal fade" id="modalSignin" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalSigninLabel" aria-hidden="true">
 						<div class="modal-dialog">
 							<div class="modal-content">
