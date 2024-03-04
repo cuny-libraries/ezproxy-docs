@@ -7,7 +7,14 @@
 						The resource you tried to access, <kbd>^H</kbd>, wasn't recognized by the remote access server. This might be due to following an outdated link or an issue with the resource's configuration in the remote access system. The problem has been automatically reported for review.
 					</p>
 					<p class="col-lg-8 mx-auto text-muted">
-						Consider searching for this resource in the library catalog, <a href="{{ catalog_url }}">OneSearch</a>. You can explore additional research options on the <a href="{{ library_url }}">library website</a>.
+						While the problem is being analyzed, try this "unproxied" link instead:<br />
+						<a href="^V" target="_blank">^U</a>
+					</p>
+					<p class="col-lg-8 mx-auto text-muted">
+						If that doesn't work, consider searching for this resource in the library catalog, <a href="{{ catalog_url }}">OneSearch</a>.
+					</p>
+					<p class="col-lg-8 mx-auto text-muted">
+						You can explore additional options on the <a href="{{ library_url }}">library website</a>.
 					</p>
 					<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
 					<form action="https://docs.google.com/forms/d/1OotVOUxvMIw3yx1gsPr8bS2Exz2OBp5Ikxe_-WN5iko/formResponse" method="POST" target="hidden_iframe" id="needhost_form">
@@ -32,6 +39,6 @@
 						</script>
 						<input type="hidden" class="form-control rounded-3" name="draftResponse" value="[]">
 						<input type="hidden" class="form-control rounded-3" name="pageHistory" value="0">
-						<button type="button" class="btn btn-primary" type="submit" style="display:none;">Submit error</button>
+						<button class="btn btn-primary" type="submit" style="display:none;">Submit error</button>
 					</form>
 					{% endblock content %}
