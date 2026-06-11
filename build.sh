@@ -5,6 +5,7 @@ SITES=(
   "bc"
   "bx"
   "bm"
+  "cc"
   "cl"
   "gj"
   "ho"
