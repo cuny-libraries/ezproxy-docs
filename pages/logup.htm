@@ -1,0 +1,14 @@
+					{% extends "base.html" %}
+					{% block page_title %}Resource Not Available{% endblock page_title %}
+					{% block content %}
+					<h1 class="text-body-emphasis">Resource Not Available</h1>
+					<p class="col-lg-8 mx-auto fs-5">
+						You are logged in, but your account is not authorized to access this particular resource.
+					</p>
+					<p class="col-lg-8 mx-auto text-muted">
+						This database or resource is restricted to a specific group of users at {{ campus_name }} and your account does not currently have the required access. If you believe you should have access, please <a href="{{ ask_url }}">ask a librarian</a> for assistance.
+					</p>
+					<p class="col-lg-8 mx-auto text-muted">
+						You may also browse other available resources on the <a href="{{ library_url }}">library website</a> or search the library catalog, <a href="{{ catalog_url }}">OneSearch</a>.
+					</p>
+					{% endblock content %}
