@@ -2,9 +2,9 @@
 
 The CUNY Office of Library Services manages more than a dozen EZproxy servers on behalf of the CUNY Libraries. To help manage all the [EZproxy web pages](https://help.oclc.org/Library_Management/EZproxy/Manage_EZproxy/Default_web_pages) (which are identical except for the campus-specific information), we automated the creation and standardization of the HTML files. Using templates, we can now easily make universal changes with just a couple of keystrokes.
 
-## Development Environment 
+## Development Environment
 
-This project was built on MacOS. It uses the [Rust](https://www.rust-lang.org/) programming language, the [tera-cli](https://github.com/chevdor/tera-cli) command line tool for the [tera](https://github.com/Keats/tera) template engine, and [Bootstrap](https://getbootstrap.com/) CSS framework.
+This project was built on MacOS. It uses Python, the [Jinja2](https://jinja.palletsprojects.com/) template engine, and the [Bootstrap](https://getbootstrap.com/) CSS framework.
 
 ### Edit Directly in GitHub
 
@@ -16,22 +16,20 @@ Make a pull request and edit the files. If your commits are merged into the main
 
 ### Install and Edit on Local Machine
 
-#### Rust
+#### Python
+
+Python 3.11 or later is required. It is pre-installed on most systems. You can check your version with:
+
+```
+python3 --version
+```
+
+#### Jinja2
 
 Run the following command in your terminal:
 
 ```
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-```
-
-This uses the [rustup](https://rustup.rs/) installer to download and install the Rust programming language.
-
-#### Tera-CLI
-
-Run the following command in your terminal and follow the on-screen prompts:
-
-```
-cargo install --git https://github.com/chevdor/tera-cli --tag v0.3.0 --root .
+pip install jinja2
 ```
 
 ### Navigate
@@ -50,7 +48,7 @@ The file and folder structure is not necessarily intuitive.
 #### Files
 
 * **README.md**: that's this file!
-* **build.sh**: shell script you must run in the command line to build the `.htm` (and all other) files you will need for EZproxy.
+* **build.py**: Python script you must run in the command line to build the `.htm` (and all other) files you will need for EZproxy.
 
 ## Edit
 
@@ -64,7 +62,7 @@ Add/remove/update logos in the `logos` folder.
 
 Add/remove/update favicons in the `favicons` folder.
 
-Modify `build.sh` when you need to add/remove campus sites to the project.
+To add a new campus, create a new `.toml` file in the `configs` folder (and add its logo and favicon). It will be picked up automatically on the next build.
 
 ## Build
 
@@ -73,7 +71,7 @@ After editing the files, you must build the pages that you will upload to the `d
 Run the following command in your terminal:
 
 ```
-bash build.sh
+python build.py
 ```
 
 This will create an `output` folder in the working directory, with a subfolder for each EZproxy site.

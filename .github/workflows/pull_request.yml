@@ -8,25 +8,23 @@ on:
 
 jobs:
 
-  nix_build_deploy:
+  build:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 10
 
     steps:
     - uses: actions/checkout@v3
 
-    - name: Install Nix
-      uses: cachix/install-nix-action@v31
+    - name: Set up Python
+      uses: actions/setup-python@v5
       with:
-        extra_nix_config: |
-          access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
+        python-version: '3.11'
 
-    - uses: workflow/nix-shell-action@v3.3.0
-      with:
-        flakes-from-devshell: true
-        script: |
-          cargo install --git https://github.com/chevdor/tera-cli --tag v0.3.0 --root .
-          bash build.sh
+    - name: Install dependencies
+      run: pip install jinja2
+
+    - name: Build
+      run: python build.py
 
     - uses: actions/upload-artifact@v4
       with:
